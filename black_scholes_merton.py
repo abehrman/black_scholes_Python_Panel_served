@@ -27,7 +27,7 @@ class BSMoption():
             else: 
                 self.dividend_rate = 0
 
-    def _black_scholes_call(self, time=None, spot=None):
+    def black_scholes_call(self, time=None, spot=None):
         
         if time is None:
             time = self.time
@@ -46,7 +46,7 @@ class BSMoption():
         return (adj_spot * N_d1) - ((self.exercise * np.exp(-self.rate * time)) * N_d2)
     
     
-    def _black_scholes_put(self, time=None, spot=None):
+    def black_scholes_put(self, time=None, spot=None):
         
         if time is None:
             time = self.time
