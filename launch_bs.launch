@@ -1,6 +1,4 @@
-#!/bin/bash
-bs
 cd "/home/bitnami/repos/black_scholes_Python_Panel_served"
 pkill -HUP panel
-python -m panel serve BlackScholes.ipynb --port 8000 --allow-websocket-origin=adambehr
+nohup python -m panel serve BlackScholes.ipynb --port 8000 --allow-websocket-origin=adambehr
 man.com:8000 --allow-websocket-origin=www.adambehrman.com:8000
