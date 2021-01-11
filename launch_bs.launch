@@ -1,3 +1,4 @@
+#!/bin/bash
 bs
 cd "/home/bitnami/repos/black_scholes_Python_Panel_served"
 pkill -HUP panel
