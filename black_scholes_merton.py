@@ -54,15 +54,27 @@ class BSMoption():
         if spot is None:
             spot = self.spot
         
-        N_d1 = stats.norm(0,1).cdf(-self._d1(spot, time)) # std. normal cum. density function @ d1
-        N_d2 = stats.norm(0,1).cdf(-self._d2(spot, time)) # std. normal cum. density function @ d2
-        
-        PV_k = self.exercise * np.exp(-self.rate * time) # present value of strike
-        
-        
+        call_px = self.black_scholes_call(time=time, spot=spot)
+
+        #put-call parity = C + PV(x) = P + S
+
+        # P = C + PV(x) - S
+
         adj_spot = spot * np.exp(-self.dividend_rate * time) # adj. spot for dividends
         
-        return (self.exercise * np.exp(-self.rate * time) * N_d2) - (np.exp(-self.dividend_rate * time) * spot * N_d1)
+        put_px = call_px + self.exercise * np.exp(-self.rate * time) - spot
+
+        # wasn't producing the correct answer
+
+        #N_d1 = stats.norm(0,1).cdf(-self._d1(spot, time)) # std. normal cum. density function @ d1
+        #N_d2 = stats.norm(0,1).cdf(-self._d2(spot, time)) # std. normal cum. density function @ d2
+        
+        #PV_k = self.exercise * np.exp(-self.rate * time) # present value of strike
+        #adj_spot = spot * np.exp(-self.dividend_rate * time) # adj. spot for dividends
+        
+        #return (self.exercise * np.exp(-self.rate * time) * N_d2) - (np.exp(-self.dividend_rate * time) * spot * N_d1)"""
+
+        return put_px
     
     
     def _d1(self, spot, time):

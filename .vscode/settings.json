@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "c:\\ProgramData\\Anaconda3\\envs\\ab\\python.exe"
+    "python.pythonPath": "c:\\ProgramData\\Anaconda3\\envs\\ab\\python.exe",
+    "terminal.integrated.shell.windows": "C:/WINDOWS/System32/cmd.exe"
 }
