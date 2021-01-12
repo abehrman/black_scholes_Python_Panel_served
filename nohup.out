@@ -1,0 +1,24 @@
+2021-01-11 02:34:18,772 Starting Bokeh server version 2.2.3 (running on Tornado 6.1)
+2021-01-11 02:34:18,773 User authentication hooks NOT provided (default user enabled)
+2021-01-11 02:34:18,778 Bokeh app running at: http://localhost:8000/BlackScholes
+2021-01-11 02:34:18,778 Starting Bokeh server with process id: 4883
+2021-01-11 02:34:32,072 Refusing websocket connection from Origin 'http://www.adambehrman.com:8000';                       use --allow-websocket-origin=www.adambehrman.com:8000 or set BOKEH_ALLOW_WS_ORIGIN=www.adambehrman.com:8000 to permit this; currently we allow origins {'adambehr:80'}
+2021-01-11 02:34:32,072 403 GET /BlackScholes/ws (68.196.92.68) 0.79ms
+2021-01-11 02:34:39,989 Refusing websocket connection from Origin 'http://www.adambehrman.com:8000';                       use --allow-websocket-origin=www.adambehrman.com:8000 or set BOKEH_ALLOW_WS_ORIGIN=www.adambehrman.com:8000 to permit this; currently we allow origins {'adambehr:80'}
+2021-01-11 02:34:39,989 403 GET /BlackScholes/ws (68.196.92.68) 0.64ms
+2021-01-11 02:35:15,694 Refusing websocket connection from Origin 'http://www.adambehrman.com:8000';                       use --allow-websocket-origin=www.adambehrman.com:8000 or set BOKEH_ALLOW_WS_ORIGIN=www.adambehrman.com:8000 to permit this; currently we allow origins {'adambehr:80'}
+2021-01-11 02:35:15,695 403 GET /BlackScholes/ws (68.196.92.68) 0.95ms
+2021-01-11 02:35:43,517 Refusing websocket connection from Origin 'http://www.adambehrman.com:8000';                       use --allow-websocket-origin=www.adambehrman.com:8000 or set BOKEH_ALLOW_WS_ORIGIN=www.adambehrman.com:8000 to permit this; currently we allow origins {'adambehr:80'}
+2021-01-11 02:35:43,518 403 GET /BlackScholes/ws (68.196.92.68) 0.67ms
+2021-01-11 02:35:48,247 Refusing websocket connection from Origin 'http://adambehrman.com:8000';                       use --allow-websocket-origin=adambehrman.com:8000 or set BOKEH_ALLOW_WS_ORIGIN=adambehrman.com:8000 to permit this; currently we allow origins {'adambehr:80'}
+2021-01-11 02:35:48,247 403 GET /BlackScholes/ws (68.196.92.68) 0.62ms
+2021-01-11 02:36:47,546 404 GET /favicon.ico (68.196.92.68) 0.46ms
+2021-01-11 02:36:47,547 Refusing websocket connection from Origin 'http://adambehrman.com:8000';                       use --allow-websocket-origin=adambehrman.com:8000 or set BOKEH_ALLOW_WS_ORIGIN=adambehrman.com:8000 to permit this; currently we allow origins {'adambehr:80'}
+2021-01-11 02:36:47,548 403 GET /BlackScholes/ws (68.196.92.68) 0.48ms
+Received signal 15, shutting down
+2021-01-11 02:39:33,851 Starting Bokeh server version 2.2.3 (running on Tornado 6.1)
+2021-01-11 02:39:33,854 User authentication hooks NOT provided (default user enabled)
+2021-01-11 02:39:33,858 Bokeh app running at: http://localhost:8000/BlackScholes
+2021-01-11 02:39:33,858 Starting Bokeh server with process id: 5017
+2021-01-11 02:40:01,597 WebSocket connection opened
+2021-01-11 02:40:01,597 ServerConnection created
