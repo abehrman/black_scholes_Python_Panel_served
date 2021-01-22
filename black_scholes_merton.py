@@ -65,6 +65,12 @@ class BSMoption():
 
         adj_spot = spot * np.exp(-self.dividend_rate * time) # adj. spot for dividends
         
+        put_px = call_px + self.exercise * np.exp(-self.rate * time) - spot
+
+        # wasn't producing the correct answer
+
+        #N_d1 = stats.norm(0,1).cdf(-self._d1(spot, time)) # std. normal cum. density function @ d1
+        #N_d2 = stats.norm(0,1).cdf(-self._d2(spot, time)) # std. normal cum. density function @ d2
         
         N_d1 = stats.norm(0,1).cdf(-self._d1(spot, time)) # std. normal cum. density function @ d1
         N_d2 = stats.norm(0,1).cdf(-self._d2(spot, time)) # std. normal cum. density function @ d2
