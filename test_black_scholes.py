@@ -15,8 +15,8 @@ def test_price_ex1():
         spot, exercise, sigma, time, rate, div_rate, continuous_compounding=False)
     
 
-    d1 = myOption._d1(spot, time)
-    d2 = myOption._d2(spot, time)
+    d1 = myOption._d1(spot, exercise, time, sigma, rate, div_rate)
+    d2 = myOption._d2(spot, exercise, time, sigma, rate, div_rate)
 
     assert d1 == approx(.39,.01)
     assert round(d2, 4) ==  approx(.2486,.05)
@@ -41,8 +41,8 @@ def test_price_ex2():
         spot, exercise, sigma, time, rate, div_rate, continuous_compounding=False)
     
 
-    d1 = myOption._d1(spot, time)
-    d2 = myOption._d2(spot, time)
+    d1 = myOption._d1(spot, exercise, time, sigma, rate, div_rate)
+    d2 = myOption._d2(spot, exercise, time, sigma, rate, div_rate)
 
     assert round(myOption.black_scholes_call(),4) == approx(12.4942)
 
@@ -70,8 +70,8 @@ def test_price_ex3():
         spot, exercise, sigma, time, rate, div_rate)
     
 
-    d1 = myOption._d1(spot, time)
-    d2 = myOption._d2(spot, time)
+    #d1 = myOption._d1(spot, exercise, time, sigma, rate, div_rate)
+    #d2 = myOption._d2(spot, exercise, time, sigma, rate, div_rate)
 
     assert round(myOption.black_scholes_call(),4) == approx(1.1790,.1)
     
@@ -99,8 +99,8 @@ def test_price_ex4():
         spot, exercise, sigma, time, rate, div_rate)
     
 
-    d1 = myOption._d1(spot, time)
-    d2 = myOption._d2(spot, time)
+    #d1 = myOption._d1(spot, time)
+    #d2 = myOption._d2(spot, time)
 
     assert round(myOption.black_scholes_call(),4) == approx(3.60688165,.1)
     
